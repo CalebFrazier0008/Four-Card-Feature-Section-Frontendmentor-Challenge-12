@@ -1,0 +1,146 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+.Container {
+  height: 1440px;
+  align-self: center;
+  width: 100vw;
+  background-color: hsl(0, 0%, 98%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Text {
+  width: 90%;
+  text-align: center;
+  color: hsl(229, 6%, 66%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+  text-align: center;
+}
+.Text > p {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 40px;
+}
+.h32 {
+  font-weight: 400;
+  font-size: 24px;
+}
+.h23 {
+  color: hsl(234, 12%, 34%);
+  padding-bottom: 10px;
+  font-size: 24px;
+}
+.Cards {
+  height: 90%;
+  width: 100%;
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Card {
+  margin: 15px;
+  width: 300px;
+  height: 240px;
+  background-color: white;
+  box-shadow: hsla(234, 12%, 34%, 0.54) 0px 5px 20px 1px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.Card > p {
+  color: hsl(229, 6%, 66%);
+  margin-left: 20px;
+}
+.Card1 > .Line {
+  background-color: hsl(180, 62%, 55%);
+}
+.Card2 > .Line {
+  background-color: hsl(0, 78%, 62%);
+}
+.Card3 > .Line {
+  background-color: hsl(34, 97%, 64%);
+}
+.Card4 > .Line {
+  background-color: hsl(212, 86%, 64%);
+}
+.Line {
+  height: 4px;
+  width: 100%;
+  background-color: aqua;
+  margin-bottom: 20px;
+}
+.Skill {
+  color: hsl(234, 12%, 34%);
+  padding-bottom: 10px;
+  margin-left: 20px;
+}
+.Card > svg {
+  align-self: flex-end;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+@media only screen and (min-width: 1200px) {
+  .Container {
+    height: 100vh;
+    align-self: center;
+    width: 100vw;
+    background-color: hsl(0, 0%, 98%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .Text {
+    width: 500px;
+    text-align: center;
+    color: hsl(229, 6%, 66%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    text-align: center;
+  }
+  .Cards {
+    height: 90%;
+    width: 980px;
+    margin-top: 100px;
+    display: grid;
+    grid-template-rows: 108px 150px 108px;
+    grid-template-columns: 266px 266px 266px;
+    grid-template-areas:
+      ". Card2 ."
+      "Card1 . Card4 "
+      ". Card3 .";
+    column-gap: 60px;
+    row-gap: 0px;
+  }
+  .Card1 {
+    grid-area: Card1;
+  }
+  .Card2 {
+    grid-area: Card2;
+  }
+  .Card3 {
+    grid-area: Card3;
+  }
+  .Card4 {
+    grid-area: Card4;
+    margin-bottom: 20px;
+  }
+}
